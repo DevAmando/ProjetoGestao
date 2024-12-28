@@ -1,7 +1,8 @@
 package Model;
 
 public class Paciente {
-
+  
+    private Integer ID;
     private String nome;
     private String CPF;
     private int idade;
@@ -53,4 +54,14 @@ public class Paciente {
         return true;
     
     }
+    
+    public Integer getId() {
+        return ID;
+    }
+
+    public void setId(String id) {
+        this.ID = ID;
+    }
+    
+    
 }
