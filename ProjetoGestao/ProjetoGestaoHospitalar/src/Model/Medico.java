@@ -2,54 +2,44 @@
 package Model;
 
 import java.util.ArrayList;
+import java.util.List;
 
-
-public class Medico {
+public class Medico extends Pessoa {
+    private String crm;
+    private List<Especialidade> especialidades;
+    private String email;
     
-    private Integer ID;
-    private String nome;
-    private ArrayList<String> especialidade = new ArrayList<>();
-    private String especialidadeMedica;
-
-    public Medico(){}
     
-    public Medico( String nome, String especialidadeMedica) {
-        this.nome = nome;
-        this.especialidadeMedica = especialidadeMedica;
-    }
-
     
-    public Integer getID() {
-        return ID;
+    public Medico(String nome, String crm, String cpf, String email) {
+        super(nome, cpf );
+        this.crm = crm;
+        this.email = email;
     }
 
-    public void setID(Integer ID) {
-        this.ID = ID;
+    public String getCrm() {
+        return crm;
     }
 
-    public String getNome() {
-        return nome;
+    public void setCrm(String crm) {
+        this.crm = crm;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public List<Especialidade> getEspecialidades() {
+        return especialidades;
     }
 
-    public ArrayList<String> getEspecialidade() {
-        return especialidade;
+    public void adicionarEspecialidade(Especialidade especialidade) {
+        this.especialidades.add(especialidade);
     }
 
-    public void setEspecialidade(ArrayList<String> especialidade) {
-        this.especialidade = especialidade;
-    }
-    
-   
-    public String getEspecialidadeMedica() {
-        return especialidadeMedica;
+    public void removerEspecialidade(Especialidade especialidade) {
+        this.especialidades.remove(especialidade);
     }
 
-    public void setEspecialidadeMedica(String especialidadeMedica) {
-        this.especialidadeMedica = especialidadeMedica;
+    @Override
+    public String toString() {
+        return "Médico: " + getNome() + "\nCRM: " + crm + "\nEspecialidades: " + especialidades;
     }
-    
 }
+

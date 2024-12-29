@@ -1,37 +1,34 @@
 package Model;
 
-public class Paciente {
+public class Paciente extends Pessoa {
   
     private Integer ID;
     private String nome;
-    private String CPF;
     private int idade;
-    private int Telefone;
+    private Medico medico;
+     
 
-    public Paciente() {
+    public Paciente(String nome, String cpf) {
+        super(nome, cpf);
+        this.medico = medico;
     }
 
-    public Paciente(String nome, String CPF, int idade, int Telefone) {
-        this.nome = nome;
-        this.CPF = CPF;
-        this.idade = idade;
-        this.Telefone = Telefone;
-    }
-
+    @Override
     public String getNome() {
         return nome;
     }
 
+    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     public String getCPF() {
-        return CPF;
+        return cpf;
     }
 
     public void setCPF(String CPF) {
-        this.CPF = CPF;
+        this.cpf = CPF;
     }
 
     public int getIdade() {
@@ -42,26 +39,38 @@ public class Paciente {
         this.idade = idade;
     }
 
-    public int getTelefone() {
-        return Telefone;
+    
+    @Override
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setTelefone(int Telefone) {
-        this.Telefone = Telefone;
+    @Override
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public boolean persitir(){
         return true;
     
     }
-    
-    public Integer getId() {
+
+    public Integer getID() {
         return ID;
     }
 
-    public void setId(String id) {
+    public void setID(Integer ID) {
         this.ID = ID;
     }
+
+    public Medico getMedico() {
+        return medico;
+    }
+
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
+    
     
     
 }

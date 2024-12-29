@@ -1,13 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
 
-/**
- *
- * @author david
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Agenda {
-    
+    private Medico medico;
+    private List<Consulta> consultas;
+
+    public Agenda(Medico medico) {
+        this.medico = medico;
+        this.consultas = new ArrayList<>();
+    }
+
+    public boolean adicionarConsulta(Consulta consulta) {
+        for (Consulta c : consultas) {
+            if (c.getDataHora().equals(consulta.getDataHora())) {
+                return false; // Conflito de horário
+            }
+        }
+        consultas.add(consulta);
+        return true;
+    }
+
+    public List<Consulta> getConsultas() {
+        return consultas;
+    }
 }

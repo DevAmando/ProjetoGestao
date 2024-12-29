@@ -4,6 +4,8 @@
  */
 package View;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author david
@@ -29,23 +31,32 @@ public class TelaCadastroMedicoView extends javax.swing.JFrame {
         jTextFieldCRMMedico = new javax.swing.JTextField();
         jComboBoxUFMedico = new javax.swing.JComboBox<>();
         jComboBoxEspecialidadesMedicas1 = new javax.swing.JComboBox<>();
-        jTextFieldNomeCadastroMedico1 = new javax.swing.JTextField();
+        jTextFieldemailMedico = new javax.swing.JTextField();
         jButtonCadastrar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelNomeCadastroMeidco = new javax.swing.JLabel();
+        jLabelNomeCadastroMeidco1 = new javax.swing.JLabel();
+        jLabelNomeCadastroMeidco2 = new javax.swing.JLabel();
+        jLabelNomeCadastroMeidco4 = new javax.swing.JLabel();
+        jTextFieldsenhaMedico = new javax.swing.JTextField();
+        jTextFieldNomeCadastroMedico3 = new javax.swing.JTextField();
+        jLabelNomeCadastroMeidco9 = new javax.swing.JLabel();
+        jLabelNomeCadastroMeidco10 = new javax.swing.JLabel();
+        jLabeleamialMedico = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextFieldCRMMedico.setBackground(new java.awt.Color(153, 153, 255));
+        jTextFieldCRMMedico.setBackground(new java.awt.Color(204, 255, 255));
         jTextFieldCRMMedico.setForeground(new java.awt.Color(0, 0, 0));
         jTextFieldCRMMedico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldCRMMedicoActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextFieldCRMMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 300, 30));
+        getContentPane().add(jTextFieldCRMMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 110, 30));
 
-        jComboBoxUFMedico.setBackground(new java.awt.Color(153, 153, 255));
+        jComboBoxUFMedico.setBackground(new java.awt.Color(204, 255, 255));
+        jComboBoxUFMedico.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jComboBoxUFMedico.setForeground(new java.awt.Color(0, 0, 0));
         jComboBoxUFMedico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acre (AC)", "Amapá (AP)", "Amazonas (AM)", "Pará (PA)", "Rondônia (RO)", "Roraima (RR)", "Tocantins (TO)", "Alagoas (AL)", "Bahia (BA)", "Ceará (CE)", "Maranhão (MA)", "Paraíba (PB)", "Pernambuco (PE)", "Piauí (PI)", "Rio Grande do Norte (RN)", "Sergipe (SE)", "Distrito Federal (DF)", "Goiás (GO)", "Mato Grosso (MT)", "Mato Grosso do Sul (MS)", "Espírito Santo (ES)", "Minas Gerais (MG)", "Rio de Janeiro (RJ)", "São Paulo (SP)", "Paraná (PR)", "Rio Grande do Sul (RS)", "Santa Catarina (SC)" }));
         jComboBoxUFMedico.addActionListener(new java.awt.event.ActionListener() {
@@ -53,9 +64,9 @@ public class TelaCadastroMedicoView extends javax.swing.JFrame {
                 jComboBoxUFMedicoActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBoxUFMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 374, 300, 30));
+        getContentPane().add(jComboBoxUFMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 170, 30));
 
-        jComboBoxEspecialidadesMedicas1.setBackground(new java.awt.Color(153, 153, 255));
+        jComboBoxEspecialidadesMedicas1.setBackground(new java.awt.Color(204, 255, 255));
         jComboBoxEspecialidadesMedicas1.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jComboBoxEspecialidadesMedicas1.setForeground(new java.awt.Color(0, 0, 0));
         jComboBoxEspecialidadesMedicas1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiologia", "Ortopedia", "Pediatria", "Ginecologia", "Dermatologia", "Neurologia", "Oncologia", "Psiquiatria", "Endocrinologia", "Urologia", "Anestesiologia", "Reumatologia", "Gastroenterologia" }));
@@ -64,16 +75,16 @@ public class TelaCadastroMedicoView extends javax.swing.JFrame {
                 jComboBoxEspecialidadesMedicas1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBoxEspecialidadesMedicas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, 300, 30));
+        getContentPane().add(jComboBoxEspecialidadesMedicas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 300, 30));
 
-        jTextFieldNomeCadastroMedico1.setBackground(new java.awt.Color(153, 153, 255));
-        jTextFieldNomeCadastroMedico1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextFieldNomeCadastroMedico1.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldemailMedico.setBackground(new java.awt.Color(204, 255, 255));
+        jTextFieldemailMedico.setForeground(new java.awt.Color(0, 0, 0));
+        jTextFieldemailMedico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldNomeCadastroMedico1ActionPerformed(evt);
+                jTextFieldemailMedicoActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextFieldNomeCadastroMedico1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 300, 30));
+        getContentPane().add(jTextFieldemailMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, 300, 30));
 
         jButtonCadastrar.setBackground(new java.awt.Color(51, 51, 51));
         jButtonCadastrar.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
@@ -84,10 +95,64 @@ public class TelaCadastroMedicoView extends javax.swing.JFrame {
                 jButtonCadastrarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 470, 270, 50));
+        getContentPane().add(jButtonCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 490, 270, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Cadastro Médico .png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, -1));
+        jLabelNomeCadastroMeidco.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNomeCadastroMeidco.setFont(new java.awt.Font("Open Sans Semibold", 0, 14)); // NOI18N
+        jLabelNomeCadastroMeidco.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelNomeCadastroMeidco.setText("UF");
+        getContentPane().add(jLabelNomeCadastroMeidco, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, -1, -1));
+
+        jLabelNomeCadastroMeidco1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNomeCadastroMeidco1.setFont(new java.awt.Font("Open Sans Semibold", 0, 14)); // NOI18N
+        jLabelNomeCadastroMeidco1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelNomeCadastroMeidco1.setText("Senha");
+        getContentPane().add(jLabelNomeCadastroMeidco1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, -1, -1));
+
+        jLabelNomeCadastroMeidco2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNomeCadastroMeidco2.setFont(new java.awt.Font("Open Sans Semibold", 0, 14)); // NOI18N
+        jLabelNomeCadastroMeidco2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelNomeCadastroMeidco2.setText("Especialidade");
+        getContentPane().add(jLabelNomeCadastroMeidco2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, -1, -1));
+
+        jLabelNomeCadastroMeidco4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNomeCadastroMeidco4.setFont(new java.awt.Font("Open Sans Semibold", 0, 14)); // NOI18N
+        jLabelNomeCadastroMeidco4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelNomeCadastroMeidco4.setText("CRM");
+        getContentPane().add(jLabelNomeCadastroMeidco4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, -1, -1));
+
+        jTextFieldsenhaMedico.setBackground(new java.awt.Color(204, 255, 255));
+        jTextFieldsenhaMedico.setForeground(new java.awt.Color(0, 0, 0));
+        jTextFieldsenhaMedico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldsenhaMedicoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldsenhaMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, 300, 30));
+
+        jTextFieldNomeCadastroMedico3.setBackground(new java.awt.Color(204, 255, 255));
+        jTextFieldNomeCadastroMedico3.setForeground(new java.awt.Color(0, 0, 0));
+        jTextFieldNomeCadastroMedico3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldNomeCadastroMedico3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldNomeCadastroMedico3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 300, 30));
+
+        jLabelNomeCadastroMeidco9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNomeCadastroMeidco9.setFont(new java.awt.Font("Open Sans Semibold", 0, 14)); // NOI18N
+        jLabelNomeCadastroMeidco9.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelNomeCadastroMeidco9.setText("Nome Completo");
+        getContentPane().add(jLabelNomeCadastroMeidco9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, -1, -1));
+
+        jLabelNomeCadastroMeidco10.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNomeCadastroMeidco10.setFont(new java.awt.Font("Open Sans Semibold", 0, 14)); // NOI18N
+        jLabelNomeCadastroMeidco10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelNomeCadastroMeidco10.setText("E-mail");
+        getContentPane().add(jLabelNomeCadastroMeidco10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 310, -1, -1));
+
+        jLabeleamialMedico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Cadastro Médico  (3).png"))); // NOI18N
+        getContentPane().add(jLabeleamialMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -101,9 +166,9 @@ public class TelaCadastroMedicoView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxUFMedicoActionPerformed
 
-    private void jTextFieldNomeCadastroMedico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNomeCadastroMedico1ActionPerformed
+    private void jTextFieldemailMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldemailMedicoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldNomeCadastroMedico1ActionPerformed
+    }//GEN-LAST:event_jTextFieldemailMedicoActionPerformed
 
     private void jComboBoxEspecialidadesMedicas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxEspecialidadesMedicas1ActionPerformed
         // TODO add your handling code here:
@@ -113,6 +178,47 @@ public class TelaCadastroMedicoView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButtonCadastrarActionPerformed
 
+    private void jTextFieldsenhaMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldsenhaMedicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldsenhaMedicoActionPerformed
+
+    private void jTextFieldNomeCadastroMedico3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNomeCadastroMedico3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldNomeCadastroMedico3ActionPerformed
+
+    public JTextField getjTextFieldCRMMedico() {
+        return jTextFieldCRMMedico;
+    }
+
+    public void setjTextFieldCRMMedico(JTextField jTextFieldCRMMedico) {
+        this.jTextFieldCRMMedico = jTextFieldCRMMedico;
+    }
+
+    public JTextField getjTextFieldNomeCadastroMedico3() {
+        return jTextFieldNomeCadastroMedico3;
+    }
+
+    public void setjTextFieldNomeCadastroMedico3(JTextField jTextFieldNomeCadastroMedico3) {
+        this.jTextFieldNomeCadastroMedico3 = jTextFieldNomeCadastroMedico3;
+    }
+
+    public JTextField getjTextFieldemailMedico() {
+        return jTextFieldemailMedico;
+    }
+
+    public void setjTextFieldemailMedico(JTextField jTextFieldemailMedico) {
+        this.jTextFieldemailMedico = jTextFieldemailMedico;
+    }
+
+    public JTextField getjTextFieldsenhaMedico() {
+        return jTextFieldsenhaMedico;
+    }
+
+    public void setjTextFieldsenhaMedico(JTextField jTextFieldsenhaMedico) {
+        this.jTextFieldsenhaMedico = jTextFieldsenhaMedico;
+    }
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -152,8 +258,20 @@ public class TelaCadastroMedicoView extends javax.swing.JFrame {
     private javax.swing.JButton jButtonCadastrar;
     private javax.swing.JComboBox<String> jComboBoxEspecialidadesMedicas1;
     private javax.swing.JComboBox<String> jComboBoxUFMedico;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelNomeCadastroMeidco;
+    private javax.swing.JLabel jLabelNomeCadastroMeidco1;
+    private javax.swing.JLabel jLabelNomeCadastroMeidco10;
+    private javax.swing.JLabel jLabelNomeCadastroMeidco2;
+    private javax.swing.JLabel jLabelNomeCadastroMeidco4;
+    private javax.swing.JLabel jLabelNomeCadastroMeidco9;
+    private javax.swing.JLabel jLabeleamialMedico;
     private javax.swing.JTextField jTextFieldCRMMedico;
-    private javax.swing.JTextField jTextFieldNomeCadastroMedico1;
+    private javax.swing.JTextField jTextFieldNomeCadastroMedico3;
+    private javax.swing.JTextField jTextFieldemailMedico;
+    private javax.swing.JTextField jTextFieldsenhaMedico;
     // End of variables declaration//GEN-END:variables
+
+    public String getEmail() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

@@ -1,29 +1,33 @@
 
 package Model;
 
-import java.util.ArrayList;
-
-
 public class Especialidade {
-     public void EscolherEspecialidadeMedica(ArrayList<String> especialidade) {
-        especialidade.add("Cardiologia");
-        especialidade.add("Ortopedia");
-        especialidade.add("Pediatria");
-        especialidade.add("Ginecologia");
-        especialidade.add("Dermatologia");
-        especialidade.add("Neurologia");
-        especialidade.add("Oncologia");
-        especialidade.add("Psiquiatria");
-        especialidade.add("Endocrinologia");
-        especialidade.add("Urologia");
-        especialidade.add("Anestesiologia");
-        especialidade.add("Reumatologia");
-        especialidade.add("Gastroenterologia");
-        
-         for (int i = 0; i < especialidade.size(); i++) {
-            System.out.println(especialidade.get(i));
-        }
-         String especialidadeMedica = especialidade.get(1);
+    private String nome;
+    private String descricao;
+
+    public Especialidade(String nome, String descricao) {
+        this.nome = nome;
+        this.descricao = descricao;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    @Override
+    public String toString() {
+        return "Especialidade: " + nome + " - " + descricao;
+    }
 }

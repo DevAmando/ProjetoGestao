@@ -31,9 +31,9 @@ public class TelaLogin extends javax.swing.JFrame {
         BotaoEntrar = new javax.swing.JButton();
         jButtonRealizarCadastro = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        canvas1 = new java.awt.Canvas();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(960, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPasswordField1.setBackground(new java.awt.Color(255, 255, 255));
@@ -65,6 +65,11 @@ public class TelaLogin extends javax.swing.JFrame {
         jButtonRealizarCadastro.setBorderPainted(false);
         jButtonRealizarCadastro.setContentAreaFilled(false);
         jButtonRealizarCadastro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButtonRealizarCadastro.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentHidden(java.awt.event.ComponentEvent evt) {
+                jButtonRealizarCadastroComponentHidden(evt);
+            }
+        });
         jButtonRealizarCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonRealizarCadastroActionPerformed(evt);
@@ -73,9 +78,10 @@ public class TelaLogin extends javax.swing.JFrame {
         getContentPane().add(jButtonRealizarCadastro, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 530, 190, 40));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Don't have an account yet (1).png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/TelaLogin.png"))); // NOI18N
         jLabel1.setRequestFocusEnabled(false);
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, -1));
+        getContentPane().add(canvas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 490, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -93,6 +99,10 @@ public class TelaLogin extends javax.swing.JFrame {
         TelaCadastroMedicoView telaDeCadastro = new TelaCadastroMedicoView();
         telaDeCadastro.setVisible(true);
     }//GEN-LAST:event_jButtonRealizarCadastroActionPerformed
+
+    private void jButtonRealizarCadastroComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jButtonRealizarCadastroComponentHidden
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRealizarCadastroComponentHidden
 
     /**
      * @param args the command line arguments
@@ -131,6 +141,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotaoEntrar;
+    private java.awt.Canvas canvas1;
     private javax.swing.JButton jButtonRealizarCadastro;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField jPasswordField1;
