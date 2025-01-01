@@ -5,17 +5,13 @@ public class Login {
     private String email;
     private String senha;
     private String nome;
-    private String crm;
-
-   
-    public Login(String email, String senha, String nome, String crm) {
+    
+      
+    public Login(String email, String senha) {
         this.email = email;
         this.senha = senha;
-        this.nome = nome;
-        this.crm = crm;
     }
-
-    
+  
     public String getEmail() {
         return email;
     }
@@ -40,12 +36,9 @@ public class Login {
         this.nome = nome;
     }
 
-    public String getCrm() {
-        return crm;
+    public boolean autenticar(String email, String senha, String emailJson,String senhaJson ) {
+        return email.equals(emailJson) && senha.equals(senhaJson);
     }
-
-    public void setCrm(String crm) {
-        this.crm = crm;
-    }
+    
     
 }

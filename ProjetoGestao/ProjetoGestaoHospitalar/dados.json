@@ -1,0 +1,12 @@
+{
+  "senha": 123,
+  "horario": [
+    12,
+    15
+  ],
+  "cpf": "12233233213",
+  "nome": "David",
+  "id": 1,
+  "email": "david@gmail.com",
+  "crm": 12344
+}
